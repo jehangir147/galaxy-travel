@@ -34,7 +34,7 @@ code {
 .btn {
   padding: 12px 32px;
   font-size: 1.2rem;
-  text-transform: lowercase;
+  text-transform: uppercase;
   background: transparent;
   color: #fff;
   border: 1px solid #fff;
