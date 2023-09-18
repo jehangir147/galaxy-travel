@@ -12,8 +12,19 @@ const Navbar = () => {
     setNavbar(!navbar);
   };
 
+  const [navBg, setNavBg] = useState(false);
+  const changeBackground = () => {
+    if (window.scrollY >= 100) {
+      setNavBg(true);
+    } else {
+      setNavBg(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeBackground);
+
   return (
-    <div className="header">
+    <div className={navBg ? "header header-bg" : "header"}>
       <Link to={"/"}>
         <h1> GLX TRVL</h1>
       </Link>
